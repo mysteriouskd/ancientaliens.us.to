@@ -1166,6 +1166,6 @@ let alltr= selectAll("tr>td:nth-child(1)");
 
 alltr.forEach(i=>{
 let a= i.innerHTML.includes("SP");
-i.className= a ? "special" : "reg";
+i.closest("tr").className= a ? "special" : "reg";
 
 });
