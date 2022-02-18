@@ -59,11 +59,11 @@ vertical-align: center;
 overflow: auto;
 }
 
-tr>td:nth-child(1){
+tr>*:nth-child(1){
 width: 5ch;
 }
 
-tr>td:nth-child(3){
+tr>*:nth-child(3){
 width: 12ch;
 }
 
@@ -71,6 +71,13 @@ thead,tfoot,th{
 background:rgb(204, 255, 204);
 }
 
+.special{
+background: pink;
+}
+
+.reg{
+background: rgb(255,255,210);
+}
 
 @media (orientation:portrait){
 #container{width: 95%;}
