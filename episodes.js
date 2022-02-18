@@ -1167,5 +1167,11 @@ let alltr= selectAll("tr>td:nth-child(1)");
 alltr.forEach(i=>{
 let a= i.innerHTML.includes("SP");
 i.closest("tr").className= a ? "special" : "reg";
+});
 
+selectAll(".special td").forEach(i=>{
+let a= /Special - /;
+if(a.test(i.innerHTML)){
+i.innerHTML= i.innerHTML.replace(a,"");
+}
 });
