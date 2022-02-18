@@ -1160,3 +1160,12 @@ a.append(b,c,d);
 select("#container").append(a);
 makeTables(d,i);
 });
+
+
+let alltr= selectAll("tr>td:nth-child(1)");
+
+alltr.forEach(i=>{
+let a= i.innerHTML.includes("SP");
+i.className= a ? "special" : "reg";
+
+});
