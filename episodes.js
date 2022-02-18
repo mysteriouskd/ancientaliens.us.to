@@ -1152,8 +1152,10 @@ let allseasons= [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18]
 allseasons.forEach((i,x)=>{
 let a= create("table");
 let b= create("caption");
+let c= create("tr");
+c.innerHTML= "<th>EP</th><th>Title</th><th>Date</th>";
 b.innerHTML= "Season " + (+x + +1);
-a.append(b);
+a.append(b,c);
 select("#container").append(a);
 makeTables(a,i);
 });
